@@ -1,0 +1,384 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+img{
+    width: auto;
+    height: 100%;
+    max-height: 20rem;
+    min-height: 9rem;
+}
+
+h1, h2, h3{
+    padding: 1rem;
+}
+
+p{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    width: 100%;
+    margin: 0;
+}
+
+/* Home Page */
+
+.home{
+    display: grid;
+    /* grid-template-rows: 12em 8em  10em 1fr 12em; */
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.promo-banner {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+    border-style: dotted;
+    margin: 2rem 0em;
+    box-sizing: border-box;
+}
+
+#home-text{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%
+}
+
+.promo-photo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    height: 100%;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.promo-photo img{
+    width: 100%;
+    height: auto;
+}
+
+.overlay-fade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    height: 5rem;
+    transition: .5s ease;
+    background-color: black;
+    max-width: 30rem;
+}
+
+.overlay-fade-text{
+    color: white;
+    opacity: 1;
+}
+  
+.promo-photo:hover .overlay-fade {
+    opacity: 0;
+    height: 0;
+}
+
+.promo-photo:active .overlay-fade {
+    opacity: 0;
+    height: 0;
+}
+
+/* Shop Page */
+
+.shop {
+    display: grid;
+    /* grid-template-rows: 12em 1fr 12em; */
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.shop-body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.shop-content{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#shop-products, #shop-delivery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-style: dotted;
+    width: 30rem;
+    height: auto;
+    margin: 2rem;
+}
+
+#stock-scents{
+    font-size: 1.7rem;
+    list-style-type: circle;
+}
+
+#shop-ordering{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+#mint-bow{
+    height: 100%;
+    width: auto;
+    max-height: 30rem;
+}
+
+/* About Page */
+
+.about {
+    display: grid;
+    /* grid-template-rows: 12em 1fr 12em; */
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+#about-title, #about-questions{
+    display: flex;
+    justify-self: center;
+}
+
+#about-text{
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    padding: 2rem 4rem;
+    justify-content: center;
+}
+
+/* Farmers Page */
+
+.farmers {
+    display: grid;
+    /* grid-template-rows: 12em 1fr 12em; */
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.farmers-body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.farmers-body p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.farmers-name{
+    text-align: center;
+}
+
+.farmers-text{
+    display: flex;
+    flex-flow: column;
+}
+
+.farmers-opening, .farmers-maple-hill, .farmers-windswept-hill{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+.maple-hill-images, .windswept-hill-images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+}
+
+.maple-hill-image, .windswept-hill-image{
+    height: 100%;
+    width: auto;
+    max-height: 25rem;
+    max-width: 500px;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+}
+
+/* Contact Page */
+
+.contact {
+    display: grid;
+    /* grid-template-rows: 12em 1fr 12em; */
+    grid-template-rows: auto;
+    width: 100%;
+    /* padding: 0;
+    margin: 0; */
+}
+
+.contact-body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-body p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header{
+    padding-top: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+#header-logo{
+    display:flex;
+    justify-content: start;
+    height: auto;
+    width: auto;
+    max-height: 10rem;
+    max-width: 10rem;
+    padding: 1rem;
+}
+
+#nav-logos{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-left-div{
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#main-nav{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-link{
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover{
+    color: #31376c;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.social-nav{
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: flex-end;
+    align-items: flex-end;
+    justify-self: flex-end;
+}
+
+.social-link{
+    color: black;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.social-link:hover{
+    color: #31376c;
+}
+
+.promo-photo{
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
