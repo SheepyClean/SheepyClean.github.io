@@ -179,20 +179,25 @@ p{
     width: 100%;
 }
 
+#profile-danielle{
+    display: block;
+    width: auto;
+    height: auto;
+    float: left;
+    padding: 2rem;
+}
+
 #about-title, #about-questions{
-    display: flex;
-    justify-self: center;
+    text-align: center;
+    padding: 0 2rem;
 }
 
 #about-text{
-    display: flex;
-    flex-flow: row wrap;
-    box-sizing: border-box;
     padding: 2rem 4rem;
-    justify-content: center;
+    display: inline-block;
 }
 
-#about-text p{
+.about-greeting{
     text-align: center;
 }
 
@@ -247,8 +252,8 @@ p{
 .maple-hill-image, .windswept-hill-image{
     height: 100%;
     width: auto;
-    max-height: 25rem;
-    max-width: 500px;
+    max-height: 18rem;
+    /* max-width: 500px; */
     box-sizing: border-box;
     padding: 1rem 2rem;
 }
@@ -308,8 +313,8 @@ nav{
     justify-content: start;
     height: auto;
     width: auto;
-    max-height: 10rem;
-    max-width: 10rem;
+    max-height: 20rem;
+    max-width: 20rem;
     padding: 1rem;
 }
 
