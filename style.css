@@ -191,6 +191,10 @@ p{
     justify-content: center;
 }
 
+#about-text p{
+    text-align: center;
+}
+
 /* Farmers Page */
 
 .farmers {
@@ -326,6 +330,7 @@ nav{
 #main-nav{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
@@ -379,6 +384,11 @@ footer{
     margin-top: 1em;
     width: 100%;
     display: flex;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+#footer-location{
+    padding-bottom: 2rem;
 }
